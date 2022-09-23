@@ -1,0 +1,24 @@
+import React from "react";
+import { useState } from "react";
+
+const CheckListItem = ({ name, checked }) => {
+  const [check, setCheck] = useState(checked);
+  return (
+    <div className="item">
+      <span className="checkbox">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 16 16"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <circle cx="8" cy="8" r="7.5" stroke="#CCCCCC" />
+        </svg>
+      </span>
+      <div className="name">{name}</div>
+    </div>
+  );
+};
+
+export default CheckListItem;
