@@ -202,6 +202,9 @@ img {
 .checklist .header .name {
   font-size: 20px;
   font-weight: bold;
+  width: 100%;
+  outline: none;
+  border: none;
 }
 
 .checklist .header .share {

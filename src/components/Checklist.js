@@ -79,7 +79,9 @@ const Checklist = ({
   return (
     <div className={`checklist ${source}`}>
       <div className="header">
-        <div className="name">{data.name}</div>
+        {source === "mychecklists" && (
+          <input className="name" defaultValue={data.name} />
+        )}
         <div className="share">Share</div>
       </div>
       <div className="list">
