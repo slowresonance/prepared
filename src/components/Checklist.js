@@ -79,9 +79,12 @@ const Checklist = ({
   return (
     <div className={`checklist ${source}`}>
       <div className="header">
-        {source === "mychecklists" && (
+        {source === "mychecklists" ? (
           <input className="name" defaultValue={data.name} />
+        ) : (
+          <div className="name">{data.name}</div>
         )}
+
         <div className="share">Share</div>
       </div>
       <div className="list">
