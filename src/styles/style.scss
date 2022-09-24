@@ -152,10 +152,24 @@ img {
   margin: 5em auto;
   .header {
     margin: 0 0 28px 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 
     .name {
       font-size: 20px;
       font-weight: bold;
+    }
+
+    .share {
+      font-weight: 18px;
+      color: #777777;
+      cursor: pointer;
+      margin-right: 1em;
+
+      &:hover {
+        color: #000000;
+      }
     }
   }
 

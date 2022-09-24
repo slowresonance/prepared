@@ -80,6 +80,7 @@ const Checklist = ({
     <div className={`checklist ${source}`}>
       <div className="header">
         <div className="name">{data.name}</div>
+        <div className="share">Share</div>
       </div>
       <div className="list">
         {data.list.map((item) => (

@@ -188,11 +188,31 @@ img {
 
 .checklist .header {
   margin: 0 0 28px 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .checklist .header .name {
   font-size: 20px;
   font-weight: bold;
+}
+
+.checklist .header .share {
+  font-weight: 18px;
+  color: #777777;
+  cursor: pointer;
+  margin-right: 1em;
+}
+
+.checklist .header .share:hover {
+  color: #000000;
 }
 
 .checklist .footer {
