@@ -24,10 +24,10 @@ const Nav = () => {
         </div>
         <div className="category-list">
           <div id="my-checklists" className="secondary-category">
-            <Link to="/my-checklists">My Checklists</Link>
+            <Link to="/my-checklists">📃 My Checklists</Link>
           </div>
           <div id="bookmarks" className="secondary-category">
-            <Link to="/bookmarks">Bookmarks</Link>
+            <Link to="/bookmarks">📌 Bookmarks</Link>
           </div>
         </div>
         <div id="Disasters" className="primary-category">
@@ -39,16 +39,16 @@ const Nav = () => {
           </div>
           <div id="nested">
             <div className="teritiary-category">
-              <Link to="/learn/tornado">Tornado</Link>
+              <Link to="/learn/tornado">🌪️ Tornado</Link>
             </div>
             <div className="teritiary-category">
-              <Link to="/learn/earthquake">Earthquake</Link>
+              <Link to="/learn/earthquake">🌍 Earthquake</Link>
             </div>
             <div className="teritiary-category">
-              <Link to="/learn/tsunami">Tsunami</Link>
+              <Link to="/learn/tsunami">🌊 Tsunami</Link>
             </div>
             <div className="teritiary-category">
-              <Link to="/learn/hurricane">Hurricane</Link>
+              <Link to="/learn/hurricane">🌀 Hurricane</Link>
             </div>
           </div>
           <div id="ongoing" className="secondary-category">
