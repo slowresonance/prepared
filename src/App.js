@@ -4,6 +4,7 @@ import MyChecklists from "./components/MyChecklists";
 import Bookmarks from "./components/Bookmarks";
 import Article from "./components/Article";
 import Home from "./components/Home";
+import Translate from "./components/Translate";
 import "./styles/style.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect } from "react";
@@ -63,6 +64,7 @@ function App() {
           </Routes>
         </div>
       </Router>
+      <Translate></Translate>
     </div>
   );
 }

@@ -135,7 +135,7 @@ const Checklist = ({
             </div>
             <div className="right">
               <div className="print action" onClick={handleAddToChecklists}>
-                Add to My Checklists
+                + Add to My Checklists
               </div>
             </div>
           </>
@@ -155,7 +155,7 @@ const Checklist = ({
                 className="your-checklists action"
                 onClick={handleAddToChecklists}
               >
-                Add to Your Checklists
+                + Add to Your Checklists
               </div>
             </div>
           </>

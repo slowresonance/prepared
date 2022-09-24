@@ -8,11 +8,8 @@ const Nav = () => {
     <nav id="nav">
       <div id="top">
         <div id="title">
-          <a href="/">
-            Prepared by{" "}
-            <a href="/" className="blue-marble">
-              Blue Marble
-            </a>
+          <a href="/" className="blue-marble">
+            Prepared by Blue Marble
           </a>
         </div>
         <input
