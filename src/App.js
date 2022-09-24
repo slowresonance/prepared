@@ -2,18 +2,31 @@ import { useState } from "react";
 import Nav from "./components/Nav";
 import MyChecklists from "./components/MyChecklists";
 import Bookmarks from "./components/Bookmarks";
+import Article from "./components/Article";
+import Home from "./components/Home";
 import "./styles/style.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { useEffect } from "react";
 
 function App() {
   const [myChecklists, setMyChecklists] = useState(data1);
   const [bookmarks, setBookmarks] = useState(data2);
+
+  useEffect(() => {
+    localStorage.setItem("mychecklists", myChecklists);
+  }, [myChecklists]);
+
+  useEffect(() => {
+    localStorage.setItem("bookmarks", bookmarks);
+  }, [bookmarks]);
+
   return (
     <div id="app">
       <Router>
         <Nav></Nav>
         <div id="main">
           <Routes>
+            <Route path="/" element={<Home></Home>}></Route>
             <Route
               path="/my-checklists"
               element={
@@ -34,6 +47,17 @@ function App() {
                   setMyChecklists={setMyChecklists}
                   setBookmarks={setBookmarks}
                 ></Bookmarks>
+              }
+            ></Route>
+            <Route
+              path="/learn/:link"
+              element={
+                <Article
+                  myChecklists={myChecklists}
+                  bookmarks={bookmarks}
+                  setMyChecklists={setMyChecklists}
+                  setBookmarks={setBookmarks}
+                ></Article>
               }
             ></Route>
           </Routes>
@@ -238,7 +262,7 @@ const data2 = [
         checked: false,
       },
       {
-        name: "One to two weeksâ€™ worth of pet food",
+        name: "One to two weeks worth of pet food",
         checked: false,
       },
       {

@@ -1,8 +1,6 @@
 import React from "react";
-import { useState } from "react";
 import Bookmarks from "./Bookmarks";
 import CheckListItem from "./CheckListItem";
-import ChecklistInput from "./ChecklistInput";
 
 const Checklist = ({
   data,
@@ -13,8 +11,6 @@ const Checklist = ({
   setMyChecklists,
   setBookmarks,
 }) => {
-  const [checklist, setChecklist] = useState(data);
-
   const handleDelete = () => {
     setMyChecklists(
       myChecklists.filter((checklist) => checklist.id !== data.id)
@@ -30,32 +26,83 @@ const Checklist = ({
   };
 
   const handleMove = () => {
-    setBookmarks([...bookmarks, checklist]);
+    setBookmarks([...bookmarks, data]);
   };
 
   const handleAddToChecklists = () => {
-    setMyChecklists([...myChecklists, checklist]);
+    setMyChecklists([...myChecklists, data]);
   };
 
   const handleFavourite = () => {
-    setBookmarks([...bookmarks, checklist]);
+    setBookmarks([...bookmarks, data]);
+  };
+
+  const removeItem = (name) => {
+    let updatedChecklist = data;
+    updatedChecklist.list = data.list.filter(
+      (checklist) => checklist.name !== name
+    );
+
+    setMyChecklists(
+      myChecklists.map((checklist) => {
+        if (checklist.id === data.id) {
+          return updatedChecklist;
+        } else {
+          return checklist;
+        }
+      })
+    );
+  };
+
+  const handleInput = (e, id) => {
+    if (e.key !== "Enter") return;
+    if (e.target.value === "") return;
+    let updatedChecklist = data;
+
+    updatedChecklist.list = [
+      ...data.list,
+      { name: e.target.value, checked: false },
+    ];
+
+    setMyChecklists(
+      myChecklists.map((checklist) => {
+        if (checklist.id === id) {
+          return updatedChecklist;
+        } else {
+          return checklist;
+        }
+      })
+    );
+    e.target.value = "";
   };
 
   return (
     <div className={`checklist ${source}`}>
       <div className="header">
-        <div className="name">{checklist.name}</div>
+        <div className="name">{data.name}</div>
       </div>
       <div className="list">
-        {checklist.list.map((item) => (
+        {data.list.map((item) => (
           <CheckListItem
             name={item.name}
             checked={item.checked}
             key={item.name}
+            removeItem={removeItem}
+            source={source}
           ></CheckListItem>
         ))}
         {source === "mychecklists" && (
-          <ChecklistInput data={data} setData={setData}></ChecklistInput>
+          <div className="add-item">
+            <input
+              type="text"
+              onKeyDown={(e) => {
+                handleInput(e, data.id);
+              }}
+              placeholder="Add a new item"
+              spellCheck="false"
+              autoComplete="chrome-off"
+            />
+          </div>
         )}
       </div>
       <div className="footer">

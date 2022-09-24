@@ -1,0 +1,52 @@
+{
+  "headImage": "https://www.amnh.org/var/ezflow_site/storage/images/media/tornado-leading-image/1666587-1-eng-US/tornado-leading-image.jpg",
+  "title": "Tornadoes and Severe Storms",
+  "link": "tornadoes-and-severe-storms",
+  "jumplinks": [
+    { "text": "Warning Signs", "href": "" },
+    { "text": "Preparation", "href": "preparation" },
+    { "text": "Take Shelter", "href": "" },
+    { "text": "Checklist", "href": "" },
+    { "text": "Remember", "href": "" }
+  ],
+  "content": [
+    {
+      "heading": "Preparation",
+      "anchor": "preparation",
+      "sections": [
+        {
+          "sub-heading": "Create an Emergency Plan",
+          "list": [
+            "Identify a safe place in your home for household members and pets to gather during a tornado.",
+            "Teach your family how to administer basic first aid, how to use a fire extinguisher, and how and when to turn off water, gas, and electricity in your home.",
+            "Make sure your children know what a tornado is, what tornado watches and warnings are, and how to take shelter, whether at home or at school"
+          ]
+        },
+        {
+          "sub-heading": "Write down important information",
+          "list": [
+            "Emergency telephone numbers (such as police, fire, paramedics, and medical centers)",
+            "Names, addresses, and telephone numbers of your insurance agents, including policy types and numbers",
+            "Important medical information (for example, allergies, regular medications, and brief medical history)",
+            "Telephone number for your bank or credit union, and your account numbers Year, model, license plate, and identification numbers of your vehicles"
+          ]
+        },
+        {
+          "sub-heading": "Create an emergency supply kit",
+          "para": [
+            "Keep your supplies in an easy-to-carry emergency preparedness kit that you can use at home or take with you in case you must evacuate."
+          ]
+        },
+        {
+          "sub-heading": "Take steps to reduce household hazards",
+          "list": [
+            "Inspect your home for possible hazards, such as if the walls are securely bolted to the foundation, if heavy items are stored on shelves more than 30 inches high, or if chairs or beds are near windows, mirrors, or large pictures.",
+            "Identify any possible hazard in the way your home is constructed, for example, you may need to strengthen the areas of connection between the wall studs and roof rafters with hurricane clips",
+            "Remember outdoor items, make a list of items to bring inside in the event of a storm, and remove any debris or loose items in your yard.",
+            "Know where and how to shut off utilities, including gas, electricity, and water, at the main switches or valves. Check with your local utility companies for instructions."
+          ]
+        }
+      ]
+    }
+  ]
+}
