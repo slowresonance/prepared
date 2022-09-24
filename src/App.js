@@ -72,7 +72,7 @@ function App() {
 const data1 = [
   {
     id: "IY7IUG9",
-    name: "Basic Disaster Supplies Kit",
+    name: "Basic Disaster Supplies Kit 🌪️",
     list: [
       {
         name: "Water (one gallon per person per day for several days, for drinking and sanitation)",
@@ -137,7 +137,7 @@ const data1 = [
 const data2 = [
   {
     id: "745490",
-    name: "Baby Todd",
+    name: "👶 Baby Todd",
     list: [
       {
         name: "diaper bag",
@@ -203,7 +203,7 @@ const data2 = [
   },
   {
     id: "274654",
-    name: "Grampa Clyde",
+    name: "👴 Grampa Clyde",
     list: [
       {
         name: "Jacket or coat",
@@ -257,7 +257,7 @@ const data2 = [
   },
   {
     id: "168953",
-    name: "Sprinkles",
+    name: "🐱 Sprinkles",
     list: [
       {
         name: "Bottled water",
@@ -319,7 +319,7 @@ const data2 = [
   },
   {
     id: "IY7IUG9",
-    name: "Basic Disaster Supplies Kit",
+    name: "⛑️ Basic Disaster Supplies Kit",
     list: [
       {
         name: "Water (one gallon per person per day for several days, for drinking and sanitation)",

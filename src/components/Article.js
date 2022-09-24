@@ -677,7 +677,7 @@ const articles = [
 const disastersChecklists = [
   {
     disaster: "tornado",
-    name: "Tornado Preparedness Checklist",
+    name: "🌪️ Tornado Preparedness Checklist",
     list: [
       {
         name: "Water (one gallon per person per day for several days, for drinking and sanitation)",
@@ -739,7 +739,7 @@ const disastersChecklists = [
   },
   {
     disaster: "tsunami",
-    name: "Tsunami Preparedness Checklist",
+    name: "🌊 Tsunami Preparedness Checklist",
     list: [
       {
         name: "Water (one gallon per person per day for several days, for drinking and sanitation)",
@@ -801,7 +801,7 @@ const disastersChecklists = [
   },
   {
     disaster: "earthquake",
-    name: "Earthquake Preparedness Checklist",
+    name: "🌎 Earthquake Preparedness Checklist",
     list: [
       {
         name: "Water (one gallon per person per day for several days, for drinking and sanitation)",
@@ -863,7 +863,7 @@ const disastersChecklists = [
   },
   {
     disaster: "hurricane",
-    name: "Hurricane Preparedness Checklist",
+    name: "🌀 Hurricane Preparedness Checklist",
     list: [
       {
         name: "Water (one gallon per person per day for several days, for drinking and sanitation)",
