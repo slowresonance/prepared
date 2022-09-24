@@ -37,7 +37,7 @@ const MyChecklists = ({
       </div>
       {
         <div id="create-checklist" onClick={handleAddNew}>
-          + Create a new Checklist
+          + Create a new Checklist 📃
         </div>
       }
       {myChecklists.map((checklist) => (

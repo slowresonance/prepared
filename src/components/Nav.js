@@ -9,7 +9,7 @@ const Nav = () => {
       <div id="top">
         <div id="title">
           <a href="/" className="blue-marble">
-            Prepared by Blue Marble
+            Prepared by Blue Marble 🌎
           </a>
         </div>
         <input
