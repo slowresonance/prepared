@@ -1,1 +1,1 @@
-Created as a entry for State-level qualifiers(Qualified) for NASA Space Apps 2022.
+Created during the 24-Hour NASA Space Apps Challenge Hackathon (qualified at regional qualifiers). Allows users to create custom checklists for Natural Disaster preparation/source checklists from governmental organizations.
